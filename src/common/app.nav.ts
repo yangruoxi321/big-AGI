@@ -213,13 +213,13 @@ export const navItems: {
   // Modals
   modals: [
     {
-      name: 'Manage Models',
+      name: '管理模型',
       icon: BuildCircleIcon,
       type: 'modal',
       overlayId: 'models',
     },
     {
-      name: 'Preferences',
+      name: '设置',
       icon: SettingsIcon,
       type: 'modal',
       overlayId: 'settings',

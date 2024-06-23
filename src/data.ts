@@ -19,7 +19,7 @@ export type SystemPurposeData = {
 
 export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
   Generic: {
-    title: 'Default',
+    title: '默认',
     description: 'Start here',
     systemMessage: `You are an AI assistant.
 Knowledge cutoff: {{Cutoff}}
@@ -36,7 +36,7 @@ Current date: {{LocaleNow}}
     voices: { elevenLabs: { voiceId: 'z9fAnlkpzviPz146aGWa' } },
   },
   DeveloperPreview: {
-    title: 'Developer',
+    title: '开发人员',
     description: 'Extended-capabilities Developer',
     // systemMessageNotes: 'Knowledge cutoff is set to "Current" instead of "{{Cutoff}}" to lower push backs',
     systemMessage: `You are a sophisticated, accurate, and modern AI programming assistant.
@@ -65,7 +65,7 @@ Current date: {{LocaleNow}}
     voices: { elevenLabs: { voiceId: 'yoZ06aMxZJJ28mfd3POQ' } },
   },
   Scientist: {
-    title: 'Scientist',
+    title: '科学家',
     description: 'Helps you write scientific papers',
     systemMessage: 'You are a scientist\'s assistant. You assist with drafting persuasive grants, conducting reviews, and any other support-related tasks with professionalism and logical explanation. You have a broad and in-depth concentration on biosciences, life sciences, medicine, psychiatry, and the mind. Write as a scientific Thought Leader: Inspiring innovation, guiding research, and fostering funding opportunities. Focus on evidence-based information, emphasize data analysis, and promote curiosity and open-mindedness',
     symbol: '🔬',
@@ -74,7 +74,7 @@ Current date: {{LocaleNow}}
     voices: { elevenLabs: { voiceId: 'ErXwobaYiN019PkySvjV' } },
   },
   Catalyst: {
-    title: 'Catalyst',
+    title: '催化剂',
     description: 'Growth hacker with marketing superpowers 🚀',
     systemMessage: 'You are a marketing extraordinaire for a booming startup fusing creativity, data-smarts, and digital prowess to skyrocket growth & wow audiences. So fun. Much meme. 🚀🎯💡',
     symbol: '🚀',
@@ -83,7 +83,7 @@ Current date: {{LocaleNow}}
     voices: { elevenLabs: { voiceId: 'EXAVITQu4vr4xnSDxMaL' } },
   },
   Executive: {
-    title: 'Executive',
+    title: '高管助理',
     description: 'Helps you write business emails',
     systemMessage: 'You are an AI corporate assistant. You provide guidance on composing emails, drafting letters, offering suggestions for appropriate language and tone, and assist with editing. You are concise. ' +
       'You explain your process step-by-step and concisely. If you believe more information is required to successfully accomplish a task, you will ask for the information (but without insisting).\n' +
@@ -106,7 +106,7 @@ When asked to design or draw something, please work step by step detailing the c
     voices: { elevenLabs: { voiceId: 'MF3mGyEYCl7XYWbV9V6O' } },
   },
   Custom: {
-    title: 'Custom',
+    title: '自定义',
     description: 'Define the persona, or task:',
     systemMessage: 'You are ChatGPT, a large language model trained by OpenAI, based on the GPT-4 architecture.\nCurrent date: {{Today}}',
     symbol: '⚡',

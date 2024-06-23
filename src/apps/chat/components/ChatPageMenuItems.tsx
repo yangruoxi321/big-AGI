@@ -92,7 +92,7 @@ export function ChatPageMenuItems(props: {
     {/* System Message(s) */}
     <MenuItem onClick={handleToggleSystemMessages}>
       <ListItemDecorator><SettingsSuggestOutlinedIcon /></ListItemDecorator>
-      System messages
+      系统消息
       <Switch checked={showSystemMessages} onChange={handleToggleSystemMessages} sx={{ ml: 'auto' }} />
     </MenuItem>
 
@@ -103,7 +103,7 @@ export function ChatPageMenuItems(props: {
         : (isMultiPane ? <VerticalSplitIcon /> : <VerticalSplitOutlinedIcon />)
       }</ListItemDecorator>
       {/* Unsplit / Split text*/}
-      {isMultiPane ? 'Unsplit' : props.isMobile ? 'Split Down' : 'Split Right'}
+      {isMultiPane ? '取消分屏' : props.isMobile ? 'Split Down' : '分屏'}
       {/* '+' */}
       {isMultiPane && (
         <Tooltip title='Add Another Split'>

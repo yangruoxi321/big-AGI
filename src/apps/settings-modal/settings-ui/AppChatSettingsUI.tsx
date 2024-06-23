@@ -33,7 +33,7 @@ const ModelsSetupButton = () => {
       '--Icon-fontSize': 'var(--joy-fontSize-xl2)',
     }}
   >
-    Models
+    模型
   </Button>;
 };
 
@@ -69,13 +69,13 @@ export function AppChatSettingsUI() {
   return <>
 
     <FormControl orientation='horizontal' sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
-      <FormLabelStart title='AI Models'
-                      description='Setup' />
+      <FormLabelStart title='AI 模型'
+                      description='设置' />
       <ModelsSetupButton />
     </FormControl>
 
     <FormControl orientation='horizontal' sx={{ justifyContent: 'space-between' }}>
-      <FormLabelStart title='Enter sends ⏎'
+      <FormLabelStart title='回车以发送⏎'
                       description={enterIsNewline ? 'New line' : 'Sends message'} />
       <Switch checked={!enterIsNewline} onChange={handleEnterIsNewlineChange}
               endDecorator={enterIsNewline ? 'Off' : 'On'}
@@ -91,8 +91,8 @@ export function AppChatSettingsUI() {
     </FormControl>
 
     <FormControl orientation='horizontal' sx={{ justifyContent: 'space-between' }}>
-      <FormLabelStart title='Edit mode'
-                      description={doubleClickToEdit ? 'Double click' : 'Three dots'} />
+      <FormLabelStart title='编辑模式'
+                      description={doubleClickToEdit ? '双击' : 'Three dots'} />
       <Switch checked={doubleClickToEdit} onChange={handleDoubleClickToEditChange}
               endDecorator={doubleClickToEdit ? 'On' : 'Off'}
               slotProps={{ endDecorator: { sx: { minWidth: 26 } } }} />
@@ -107,8 +107,8 @@ export function AppChatSettingsUI() {
     </FormControl>}
 
     <FormRadioControl
-      title='Appearance'
-      description={zenMode === 'clean' ? 'Show senders' : 'Minimal UI'}
+      title='外观'
+      description={zenMode === 'clean' ? '显示发送者' : 'Minimal UI'}
       options={[
         { label: 'Clean', value: 'clean' },
         { label: 'Zen', value: 'cleaner' },
@@ -119,8 +119,8 @@ export function AppChatSettingsUI() {
 
     {!isPwa() && !isMobile && (
       <FormRadioControl
-        title='Page Size'
-        description={centerMode === 'full' ? 'Full screen chat' : centerMode === 'narrow' ? 'Narrow chat' : 'Wide'}
+        title='页面大小'
+        description={centerMode === 'full' ? 'Full screen chat' : centerMode === 'narrow' ? 'Narrow chat' : '宽屏'}
         options={[
           { value: 'narrow', label: <WidthNormalIcon sx={{ width: 25, height: 24, mt: -0.25 }} /> },
           { value: 'wide', label: <WidthWideIcon sx={{ width: 25, height: 24, mt: -0.25 }} /> },
